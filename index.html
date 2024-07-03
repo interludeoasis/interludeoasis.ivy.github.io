@@ -7,36 +7,51 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+
     <header>
         <h1>cafe list</h1>
     </header>
 
-  
-
-    
-
-    <main>      
+    <main> 
+        <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>     
         <section class="welcome">
             <h3>  ⊹ * . ✧ Welcome to my page ✧ ˖˚˳⊹  </h3>
             <p>このページはカフェ紹介ページです</p>
+            <P>カフェ探しに是非役立ててみて下さい</P>
+            
         </section>
+
+
 
         <nav>
             <ul class="menu">
-            <li><a href="#tk"> Tokyo</a></li>
-            <li><a href="#os">Osaka</a></li>
-            <li><a href="#fk">Fukuoka</a></li>
-            <li><a href="#oi">Oita</a></li>   
-    
+                <li><a href="#tk"> Tokyo</a></li>
+                <li><a href="#os">Osaka</a></li>
+                <li><a href="#fk">Fukuoka</a></li>
+                <li><a href="#oi">Oita</a></li>  
             </ul>
         </nav>
 
+        <nav>
+            <ul class="menu2">
+            <p>other menu</p>
+            <li><a a href="found.html">カフェの探し方</a></li>
+            <li><a a href="take.html">写真の撮り方</a></li>
+            <li><a href="index1.html"target="_blank"> ミニリスト</a></li>
+            <ul>
+        </nav>
+
+        
+
+        
         <section class="place" id="tk">
             <h4> .𖥔 ݁ ˖　Tokyo　.𖥔 ݁ ˖</h4>
         </section>
 
         <section class="cafe" >
-            <h2>MUUN Seoul </h2>
+            <h2 class="cafe-name" onclick="copyToClipboard(this)"><span class="tooltip">muun seoul<span class="description_top">クリックで名前をコピー</span></h2>
+            <div class="copied-animation" >copied ˖˚˳</div>
             <p>原宿観光中の一休みにぴったりのカフェ</p>
             <div class="image-container">
                 <div class="image-wrapper">
@@ -47,8 +62,8 @@
                 <img src="AnyConv.com__IMG_8602.jpeg" alt="カフェ 店内">
             </div>
         </div>
-        <p><a href="https://maps.app.goo.gl/Xdqvmg6V356PoBLV7" target="_blank"><small>   東京都渋谷区神宮前３丁目２９ ７T's6ビル</small></a></p>
-        <p><a href="https://www.instagram.com/muun_seoul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><small>insta: @muun_seoul</small></a></p>
+        <p><a href="https://maps.app.goo.gl/Xdqvmg6V356PoBLV7" target="_blank"></span> <span class="tooltip"><small> 東京都渋谷区神宮前３丁目２９ ７T's6ビル</small><span class="description_top">クリックで地図を表示</span></span></a></p>
+        <p><a href="https://www.instagram.com/muun_seoul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"> <span class="tooltip"> <small>insta: @muun_seoul</small><span class="description_top">クリックでインスタグラムを表示</span></span></a></p>
          </section>
 
          <section class="place" id="os">
@@ -56,7 +71,8 @@
         </section>
 
         <section class="cafe" >
-            <h2>Comme des fleurs</h2>
+            <h2 class="cafe-name" onclick="copyToClipboard(this)"><span class="tooltip">Comme des fleurs<span class="description_top">クリックで名前をコピー</h2>
+            <div class="copied-animation">copied ˖˚˳</div>
             <p>コリアンタウンにある本格韓国カフェ</p>
             <div class="image-container">
                 <div class="image-wrapper">
@@ -67,15 +83,15 @@
                     <img src="FullSizeRender_891.jpg" alt="カフェ 店内">
                 </div>
             </div>
-            <p><a href="https://maps.app.goo.gl/n89nRSTAMpF5UhrQ9" target="_blank"> <small>   大阪府大阪市生野区鶴橋２丁目１７−１</small></a></p>
-            <p><a href="https://www.instagram.com/comme.des.fleurs.japan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><small>insta: @
-                comme.des.fleurs.japan</small></a></p>
+            <p><a href="https://maps.app.goo.gl/n89nRSTAMpF5UhrQ9" target="_blank"> <small>  <span class="tooltip"> 大阪府大阪市生野区鶴橋２丁目１７−１<span class="description_top">クリックで地図を表示</span></span></small></a></p>
+            <p><a href="https://www.instagram.com/comme.des.fleurs.japan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><span class="tooltip"><small>insta: @comme.des.fleurs.japan</small><span class="description_top">クリックでインスタグラムを表示</span></span></a></p>
         </section>
         
        
 
         <section class="cafe">
-            <h2>ASAKARA GOOD STORE</h2>
+            <h2 class="cafe-name" onclick="copyToClipboard(this)"><span class="tooltip">ASAKARA GOOD STORE<span class="description_top">クリックで名前をコピー</h2>
+            <div class="copied-animation" class="copied-animation">copied ˖˚˳</div>
             <p>流行りのアサイーボウルが食べられるカフェ</p>
             <div class="image-container">
                 <div class="image-wrapper">
@@ -86,8 +102,8 @@
                     <img src="IMG_8066.jpg" alt="shop">
                 </div>
             </div>
-            <p><a href="https://maps.app.goo.gl/xa5qj6dyefnw8zZk9" target="_blank"><small>大阪府大阪市中央区法円坂１丁目４−６ 法円坂ハイツ 1F102</small></a></p>
-            <p><a href="https://www.instagram.com/asakara_goodstore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><small>insta: @asakara_goodstore</small></a></p>
+            <p><a href="https://maps.app.goo.gl/xa5qj6dyefnw8zZk9" target="_blank"><small><span class="tooltip">大阪府大阪市中央区法円坂１丁目４−６ 法円坂ハイツ 1F102<span class="description_top">クリックで地図を表示</span></span></small></a></p>
+            <p><a href="https://www.instagram.com/asakara_goodstore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><span class="tooltip"><small>insta: @asakara_goodstore</small><span class="description_top">クリックでインスタグラムを表示</span></span></a></p>
 
         </section>
 
@@ -96,7 +112,8 @@
         </section>
 
         <section class="cafe" >
-            <h2>友安製作所とハンバーガー</h2>
+            <h2 class="cafe-name" onclick="copyToClipboard(this)"><span class="tooltip">友安製作所とハンバーガー<span class="description_top">クリックで名前をコピー</h2>
+            <div class="copied-animation" class="copied-animation">copied ˖˚˳</div>
             <p>インテリアショップとハンバーガーショップとカフェが融合しているお店</p>
             <div class="image-container">
                 <div class="image-wrapper">
@@ -107,8 +124,8 @@
                     <img src="IMG_8613.PNG" alt="カフェ 店内">
                 </div>
             </div>
-            <p><a href="https://maps.app.goo.gl/LSsitGSQQxE1BYnR9" target="_blank"> <small>    福岡県福岡市博多区冷泉町８−１７ まるじんビル 101</small></a></p>
-            <p><a href="https://www.instagram.com/tomoyasucafe_hakata?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><small>insta: @tomoyasucafe_hakata</small></a></p>
+            <p><a href="https://maps.app.goo.gl/LSsitGSQQxE1BYnR9" target="_blank"> <small>    <span class="tooltip">福岡県福岡市博多区冷泉町８−１７ まるじんビル 101<span class="description_top">クリックで地図を表示</span></span></small></a></p>
+            <p><a href="https://www.instagram.com/tomoyasucafe_hakata?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><span class="tooltip"><small>insta: @tomoyasucafe_hakata</small><span class="description_top">クリックでインスタグラムを表示</span></span></a></p>
         </section>
 
         <section class="place" id="oi">
@@ -116,23 +133,8 @@
         </section>
 
         <section class="cafe" >
-            <h2>CAFE DAISY OITA</h2>
-            <p>平日はドリンクとケーキのセット学割がある学生に優しいカフェ</p>
-            <div class="image-container">
-                <div class="image-wrapper">
-                    <img src="14C2DB32-FBC1-4103-85EB-7D6E0532F998.jpg" alt="カフェ ">
-                    <div class="overlay">My choice チュロス</div>
-                </div>
-                <div class="image-wrapper">
-                    <img src="IMG_8591.PNG" alt="カフェ 店内">
-                </div>
-            </div>
-            <p><a href="https://maps.app.goo.gl/D1mmSpziQc6nKL8n9" target="_blank"> <small>   大分県大分市中央町３丁目７−１ おおいた元気横丁ビル1F</small></a></p>
-            <p><a href="https://www.instagram.com/daisy.oita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><small>insta: @daisy.oita</small></a></p>
-        </section>
-
-        <section class="cafe" >
-            <h2>10 COFFEE BREWERS</h2>
+            <h2 class="cafe-name" onclick="copyToClipboard(this)"><span class="tooltip">10 COFFEE BREWERS<span class="description_top">クリックで名前をコピー</h2>
+            <div class="copied-animation" class="copied-animation">copied ˖˚˳</div>
             <p>自分だけのカスタムドリンクが飲めるカフェ</p>
             <div class="image-container">
                 <div class="image-wrapper">
@@ -143,13 +145,68 @@
                     <img src="IMG_8645.PNG" alt="カフェ 店内">
                 </div>
             </div>
-            <p><a href="https://maps.app.goo.gl/SxAKKPYZ5AUroSnV7" target="_blank"> <small>  大分県大分市中央町３丁目６−１３ ロキシービル 2F</small></a></p>
-            <p><a href="https://www.instagram.com/ten_coffee.oita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><small>insta: @ten_coffee.oita</small></a></p>
+            <p><a href="https://maps.app.goo.gl/SxAKKPYZ5AUroSnV7" target="_blank"> <small> <span class="tooltip"> 大分県大分市中央町３丁目６−１３ ロキシービル 2F<span class="description_top">クリックで地図を表示</span></span></small></a></p>
+            <p><a href="https://www.instagram.com/ten_coffee.oita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><span class="tooltip"><small>insta: @ten_coffee.oita</small><span class="description_top">クリックでインスタグラムを表示</span></span></a></p>
+        </section>
+
+        <section class="cafe" >
+            <h2 class="cafe-name" onclick="copyToClipboard(this)"><span class="tooltip">CAFE DAISY OITA<span class="description_top">クリックで名前をコピー</h2>
+            <div class="copied-animation" class="copied-animation">copied ˖˚˳</div>
+            <p>平日はドリンクとケーキのセット学割がある学生に優しいカフェ</p>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="14C2DB32-FBC1-4103-85EB-7D6E0532F998.jpg" alt="カフェ ">
+                    <div class="overlay">My choice チュロス</div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="IMG_8591.PNG" alt="カフェ 店内">
+                </div>
+            </div>
+            <p><a href="https://maps.app.goo.gl/D1mmSpziQc6nKL8n9" target="_blank"> <small>  <span class="tooltip"> 大分県大分市中央町３丁目７−１ おおいた元気横丁ビル1F<span class="description_top">クリックで地図を表示</span></span></small></a></p>
+            <p><a href="https://www.instagram.com/daisy.oita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><span class="tooltip"><small>insta: @daisy.oita</small><span class="description_top">クリックでインスタグラムを表示</span></span></a></p>
         </section>
 
         <section class="cafe">
-            <h2>3's Cafe</h2>
-            <p>駅周辺にある24時まで営業しているカフェ</p>
+            <h2 class="cafe-name" onclick="copyToClipboard(this)"><span class="tooltip">BURTON cafe&kitchen<span class="description_top">クリックで名前をコピー</h2>
+            <div class="copied-animation" class="copied-animation">copied ˖˚˳</div>
+            <p>焼き菓子屋が併設してあるカフェ </p>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="IMG_8647.PNG" alt="menu">
+                    <div class="overlay">My choice  プリン</div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="IMG_8646.PNG" alt="shop">
+                </div>
+            </div>
+            <p><a href="https://maps.app.goo.gl/fAq2rCNAbDvuYxrZ9" target="_blank"><small>   <span class="tooltip">  大分県大分市小池原６４４−３<span class="description_top">クリックで地図を表示</span></span></small></a></p>
+            <p><a href="https://www.instagram.com/burton20180209?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><span class="tooltip"><small>insta: @burton20180209</small><span class="description_top">クリックでインスタグラムを表示</span></span></a></p>
+
+        </section>
+
+        <section class="cafe">
+            <h2 class="cafe-name" onclick="copyToClipboard(this)"><span class="tooltip">cafe&bar Lemon<span class="description_top">クリックで名前をコピー</h2>
+            <div class="copied-animation" class="copied-animation">copied ˖˚˳</div>
+            <p>店内でピクニック気分を味わえるカフェ</p>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="IMG_8650.PNG" alt="menu">
+                    <div class="overlay">My choice  アイスキャラメルラテ</div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="IMG_8649.PNG" alt="shop">
+                </div>
+            </div>
+            <p><a href="https://maps.app.goo.gl/fAq2rCNAbDvuYxrZ9" target="_blank"><small>   <span class="tooltip">  大分県大分市中央町２丁目-６-７Fujihiro.Bld II<span class="description_top">クリックで地図を表示</span></span></small></a></p>
+            <p><a href="https://www.instagram.com/cafebar_lemon?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><span class="tooltip"><small>insta: @cafebar_lemon</small><span class="description_top">クリックでインスタグラムを表示</span></span></a></p>
+
+        </section>
+
+
+        <section class="cafe">
+            <h2 class="cafe-name" onclick="copyToClipboard(this)"><span class="tooltip">3's Cafe<span class="description_top">クリックで名前をコピー</h2>
+            <div class="copied-animation" class="copied-animation">copied ˖˚˳</div>
+            <p>24時まで営業しているカフェ</p>
             <div class="image-container">
                 <div class="image-wrapper">
                     <img src="IMG_8600.jpg" alt="menu">
@@ -159,15 +216,112 @@
                     <img src="IMG_8601.jpeg" alt="shop">
                 </div>
             </div>
-            <p><a href="https://maps.app.goo.gl/GHGbZi5Zt8pyejM5A" target="_blank"><small>    大分県別府市駅前本町１−１４ 柴田ビル １Ｆ</small></a></p>
-            <p><a href="https://www.instagram.com/3_s_cafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><small>insta: @3_s_cafe</small></a></p>
+            <p><a href="https://maps.app.goo.gl/GHGbZi5Zt8pyejM5A" target="_blank"><small>   <span class="tooltip"> 大分県別府市駅前本町１−１４ 柴田ビル １Ｆ<span class="description_top">クリックで地図を表示</span></span></small></a></p>
+            <p><a href="https://www.instagram.com/3_s_cafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank"><span class="tooltip"><small>insta: @3_s_cafe</small><span class="description_top">クリックでインスタグラムを表示</span></span></a></p>
+        </section>
+
+
+        <section class="recommendation-form">
+            <h2>あなたのおすすめのカフェも教えてください</h2>
+            <form>
+                <label for="cafe-name">カフェの名前:</label>
+                <input type="text" id="cafe-name" name="cafe-name" required>
+        
+                <label for="prefecture">都道府県:</label>
+                <select id="prefecture" name="prefecture" required>
+                    <option value="" disabled selected>選択してください</option>
+                    <option value="北海道">北海道</option>
+                    <option value="青森県">青森県</option>
+                    <option value="岩手県">岩手県</option>
+                    <option value="宮城県">宮城県</option>
+                    <option value="秋田県">秋田県</option>
+                    <option value="山形県">山形県</option>
+                    <option value="福島県">福島県</option>
+                    <option value="茨城県">茨城県</option>
+                    <option value="栃木県">栃木県</option>
+                    <option value="群馬県">群馬県</option>
+                    <option value="埼玉県">埼玉県</option>
+                    <option value="千葉県">千葉県</option>
+                    <option value="東京都">東京都</option>
+                    <option value="神奈川県">神奈川県</option>
+                    <option value="新潟県">新潟県</option>
+                    <option value="富山県">富山県</option>
+                    <option value="石川県">石川県</option>
+                    <option value="福井県">福井県</option>
+                    <option value="山梨県">山梨県</option>
+                    <option value="長野県">長野県</option>
+                    <option value="岐阜県">岐阜県</option>
+                    <option value="静岡県">静岡県</option>
+                    <option value="愛知県">愛知県</option>
+                    <option value="三重県">三重県</option>
+                    <option value="滋賀県">滋賀県</option>
+                    <option value="京都府">京都府</option>
+                    <option value="大阪府">大阪府</option>
+                    <option value="兵庫県">兵庫県</option>
+                    <option value="奈良県">奈良県</option>
+                    <option value="和歌山県">和歌山県</option>
+                    <option value="鳥取県">鳥取県</option>
+                    <option value="島根県">島根県</option>
+                    <option value="岡山県">岡山県</option>
+                    <option value="広島県">広島県</option>
+                    <option value="山口県">山口県</option>
+                    <option value="徳島県">徳島県</option>
+                    <option value="香川県">香川県</option>
+                    <option value="愛媛県">愛媛県</option>
+                    <option value="高知県">高知県</option>
+                    <option value="福岡県">福岡県</option>
+                    <option value="佐賀県">佐賀県</option>
+                    <option value="長崎県">長崎県</option>
+                    <option value="熊本県">熊本県</option>
+                    <option value="大分県">大分県</option>
+                    <option value="宮崎県">宮崎県</option>
+                    <option value="鹿児島県">鹿児島県</option>
+                    <option value="沖縄県">沖縄県</option>
+                    
+                </select>
+
+                <label for="cafe-image-1">カフェの画像 (食べ物など):</label>
+        <input type="file" id="cafe-image-1" name="cafe-image-1" accept="image/*" required>
+
+        <label for="cafe-image-2">カフェの画像 （店内の様子など）:</label>
+        <input type="file" id="cafe-image-2" name="cafe-image-2" accept="image/*" required>
+        
+                <label for="recommendation-points">おすすめポイント:</label>
+                <textarea id="recommendation-points" name="recommendation-points" rows="4" required></textarea>
+        
+                <label for="recommended-menu">おすすめのメニュー:</label>
+                <input type="text" id="recommended-menu" name="recommended-menu" required>
+        
+                <label for="pen-name">投稿者のペンネーム:</label>
+                <input type="text" id="pen-name" name="pen-name" required>
+        
+                <label for="age-range">年齢:</label>
+                <select id="age-range" name="age-range" required>
+                    <option value="" disabled selected>選択してください</option>
+                    <option value="0代">10歳未満</option>
+                    <option value="10代">10代</option>
+                    <option value="20代">20代</option>
+                    <option value="30代">30代</option>
+                    <option value="40代">40代</option>
+                    <option value="50代">50代</option>
+                    <option value="60代以上">60代以上</option>
+                </select>
+        
+                <button type="submit">送信</button>
+            </form>
 
         </section>
+
+    
         
-    </main>
+
+
     <footer>
-        <p></p>
-        <p><small>&copy; 2024 江島杏</small></p>
+        <p><a href="https://www.instagram.com/xing.u_7/?utm_source=ig_web_button_share_sheet" target="_blank"><small>instagram</small></a></p>
+        <p><a href="https://www.tiktok.com/@31lir?is_from_webapp=1&sender_device=pc" target="_blank"><small>tiktok</small></a></p>
+        <p><small>&copy; 江島杏</small></p>
     </footer>
+    <script src="copied.js"></script>
+        
 </body>
 </html>
